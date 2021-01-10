@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yung Chia Tai</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/content.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <!--animate.css -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- browser link-->
+        <link rel="icon" href="./img/icon/SVG/browser-icon.svg">
+
+        <!-- animate js -->
+        <script type="text/javascript" src="./js/jQuery.js"></script>
+
+        <!-- js back to top -->
+        <script src="./js/jQuery.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                /* 按下GoTop按鈕時的事件 */
+                $('#gotop').click(function(){
+                    $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                    return false;
+                });
+                
+                /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+                $(window).scroll(function() {
+                    if ( $(this).scrollTop() > 400){
+                        $('#gotop').fadeIn();
+                    } else {
+                        $('#gotop').fadeOut();
+                    }
+                });
+            });
+        </script>   
+
+    </head>
+<body class="animate__animated animate__fadeIn">
+    <header id="header">
+        <span class="logotype"><a href="./index.html">Yung Chia Tai</a></span> 
+        <div class="header-list">
+            <a href="./about.html">About</a>
+            <a href="./work.html">Works</a>
+        </div>
+    </header> 
+        <div class="block"></div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/Euspa/eupsa-cover.jpg" alt="">
+        </div>
+        <div class="block"></div>
+        <div class="info">
+            <h2>EUSPA Logo Design</h2>
+            <h6 style="color: #808080;">2020</h6>
+            <div class="works_introduction">
+                <h6 style="font-weight: 200;"><br>The European GNSS Agency is organising the design contest referred to above. You are invited to submit a design project taking into account the conditions specified in the present Notice. Submission of a design project implies acceptance of all the terms and conditions set out in this Notice, unless the participant indicates in its proposal that it does not comply fully or partially with one or more of theseterms or conditions.</h6>
+            </div>
+        </div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <img class="banner" src="./img/works/Euspa/euspa-banner.jpg" alt="" >
+
+        <div class="block"></div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/Euspa/euspa-concept.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/Euspa/dark_colorplan_1.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_content">
+                <img src="./img/works/Euspa/logo-layout.jpg" alt="None" class="content_image">
+            </div>
+            <div class="work_content">
+                <img src="./img/works/Euspa/dark_colorplan_2.jpg" alt="None" class="content_image">
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/Euspa/color_colorplan_1.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/Euspa/sky.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_content">
+                <img src="./img/works/Euspa/rocket.jpg" alt="None" class="content_image">
+            </div>
+            <div class="work_content">
+                <img src="./img/works/Euspa/spaceman.jpg" alt="None" class="content_image">
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/Euspa/fonttype.jpg" alt="">
+            <img class="work_image_full" src="./img/works/Euspa/application.jpg" alt="">
+            <img class="work_image_full" src="./img/works/Euspa/application_1.jpg" alt="">
+            <img class="work_image_full" src="./img/works/Euspa/application_stationery.jpg" alt="">
+            <img class="work_image_full" src="./img/works/Euspa/application_cloth.jpg" alt="">
+                <div class="work_content">
+                    <img src="./img/works/Euspa/space_shuttle.jpg" alt="None" class="content_image">
+                </div>
+                <div class="work_content">
+                    <img src="./img/works/Euspa/space_shuttle2.jpg" alt="None" class="content_image">
+                </div>
+            <img class="work_image_full" src="./img/works/Euspa/application_3.jpg" alt="">
+        </div>
+        <div class="block"></div>
+        <div class="block-line"></div>
+        <footer id="footer">Copyright © 2020. YungChia Tai</footer>
+        <a href="./OH Boy.html" id="gotop"><span class="fa_top">Top</span></a>
+</body>
+</html>

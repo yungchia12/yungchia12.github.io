@@ -1,0 +1,476 @@
+
+/* 共用 */
+
+#content_layout{
+    padding-top: 40px;
+    clear: both;
+}
+
+.layout{
+    margin: 0 auto;
+    text-align: center;
+}
+.banner{
+    width: 100%;
+    background-size: cover;
+}
+.owl-carousel-img{
+    padding: 24px;
+    width: 52%;
+    margin: 0 auto;
+}
+.block{
+    height: 48px;
+    padding: 16px;
+    margin: 0 auto;
+    clear: both;
+}
+.block-line{
+    margin: 20px auto;
+    height: 1px;
+    width: 80%;
+    background-color: #eeeeee;
+    clear: both;
+}
+.info{
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.info h1{
+    line-height: 56px;
+    font-weight: 200;
+}
+
+
+
+/* homepage start */
+.thumb_image{
+    margin-left: 12vw;
+    margin-right: 12vw;
+    display: block;
+    /* text-align: center; */
+    text-align: center;
+}
+.thumb_image_content{
+    width: 40%;
+    display: inline-block;
+    margin: 16px;
+}
+.image{
+    width: 100%;
+    background-size: contain;
+    text-align: center;
+    opacity: 0.6;
+    transition: 0.8s;
+    background-color: #0d0d0d;
+}
+.image:hover{
+    transform: scale(1.025);
+    transition: 0.4s;
+    opacity: 1;
+    box-shadow: 0 5px 12px 0 rgba(0,0,0,0.16);
+}
+.image::after:hover{
+    background-color: #0d0d0d;
+    opacity: 0.6;
+    content: "";
+}
+.thumb_title{
+    text-align: left;
+    padding: 20px 0px;
+    letter-spacing: 0.8px;
+    transition: 0.4s;
+    line-height: 19.6px;
+}
+.thumb_title:hover{
+    color: #1BC89D;
+}
+.thumb_title h6{
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* homepage end */
+
+
+
+/* about page */
+.profolio{
+    margin-left: 16vw;
+    margin-right: 16vw;
+}
+.profolio_photo{
+    background-size: cover;
+    width: 22vw;
+    height: 22vw;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center
+}
+.introduction{
+    font-size: 16px;
+    line-height: 28.4px;
+    /* margin:0 auto; */
+}
+.intro_list_layout{
+    /* width: 60%; */
+    margin-left: 16vw;
+    margin-right: 16vw;
+    /* margin: 0 auto; */
+    padding: 16px;
+}
+.intro_row{
+    width: 16vw;
+    display: block;
+    float: left;
+}
+.intro_row h5{
+    font-weight: 600;
+    width: 100%;
+}
+.intro_title span{
+    letter-spacing: 1px;
+}
+.intro_content_row{
+    width: 36vw;
+    display: block;
+    float: right;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+}
+.profolio_link_list{
+    padding: 32px 0;
+    text-align: left;
+}
+.profolio_link{
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: 400;
+}
+/* about page end */
+
+
+/* works page */
+.works_layout{
+    /* width: 60%;
+    margin: 0 auto; */
+    height: auto;
+    text-align: center;
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+.works_item{
+    padding:16px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 49%;
+    box-sizing: border-box;
+}
+.works_photo{
+    width: 100%;
+    /* min-width: 40%; */
+    background-position: right; 
+    transition: 0.8s;
+}
+.works_photo:hover{
+    transform: scale(1.025);
+    transition: 0.4s;
+    opacity: 1;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.16);
+}
+.works_text_row{
+    width: 100%;
+}
+.text{
+    padding: 16px 8px 16px 8px;
+    width: 100%;
+    word-wrap:break-word;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.text h3{
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 25.6px;
+}
+.text span{
+    width: 100%;
+    letter-spacing: 0.8px;
+}
+/* 作品layout設定*/
+.works_introduction{
+    width:80%;
+    margin: 0 auto;
+    line-height: 20.4px;
+}
+.work_layout{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.work_content{
+    width: 49%;
+    padding: 16px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+.work_text_layout{
+    width: 96%;
+    padding: 16px;
+    margin: 0 auto;
+    text-align: left;
+}
+.content_image{
+    width: 100%;
+}
+.work_intro{
+    width: auto;
+    padding: 24px 0px;
+    line-height: 24px;
+}
+.work_image_full{
+    width: 96%;
+    margin: 0 auto;
+    display: block;
+    padding: 16px 0px;
+}
+/* works page end */
+
+
+
+/* 768px */
+@media screen and (max-width:768px){
+    .content{
+        height: 360px;
+    }
+    .block{
+        padding: 8px;
+        height: 4px;
+        width: 100%;
+    }
+    .block-line{
+        margin: 10px auto;
+        height: 1px;
+        width: 80%;
+        background-color: #f0f0f0;
+    }
+    .thumb_image_content{
+        padding:16px;
+        width: 100%;
+    }
+    .title{
+        padding-top: 16px;
+        padding-left: 24px ;
+        float: left;
+        text-align: left;
+        color: #000000;
+        opacity: 0.6;
+    }
+    .info{
+        width: 100%;
+        padding: 8px;
+    }
+    /* homepage start */
+    .owl-carousel-img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .thumb_image_content{
+        /* width: 40%; */
+        display: inline-block;
+        margin: 0px;
+    }
+    .thumb_title{
+        padding: 8px 0px;
+        letter-spacing: 0.8px;
+        width: 100%;
+    }
+    /* about */
+    .profolio{
+        /* width: 80%; */
+        /* margin: 0 auto; */
+        margin-left: 12vw;
+        margin-right: 12vw;
+    }
+    .profolio_photo{
+        width: 25vw;
+        height: 25vw;
+    }
+    .intro_list_layout{
+        /* width: 80%; */
+        /* margin: 0 auto; */
+        padding: 16px;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .intro_content_row{
+        width: 100%;
+        padding: 16px 0px;
+    }
+    .intro_row{
+        width: 100%;
+    }
+
+    /* works */
+    .introduction{
+        width: 100%;
+    }
+    .works_layout{
+        text-align: center;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .works_item{
+        padding: 0px;
+        width: 98%;
+    }
+    .works_photo{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        padding: 16px 0px;
+    }
+    .image{
+        opacity: 1;
+    }
+
+    /* 作品設定 */
+    .work_content{
+        width: 100%;
+    }
+    .works_introduction{
+        width: 100%;
+        font-size: 14px;
+        padding: 16px;
+    }
+    .work_layout{
+        width: 100%;
+    }
+}
+@media screen and (max-width:425px){
+    .content{
+        height: 360px;
+    }
+    .block{
+        padding: 8px;
+        height: 4px;
+        width: 100%;
+    }
+    .block-line{
+        margin: 8px auto;
+        height: 1px;
+        width: 80%;
+        background-color: #f0f0f0;
+    }
+    .thumb_image_content{
+        padding:16px 8px;
+    }
+    .title{
+        padding-top: 16px;
+        padding-left: 24px ;
+        float: left;
+        text-align: left;
+        opacity: 0.6;
+    }
+    /* homepage */
+    #content_layout{
+        width: auto;
+        padding-top: 8px;
+    }
+    .owl-carousel-img{
+        width: 100%;
+        padding: 8px 0px;
+    }
+    .thumb_image{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .thumb_image_content{
+        display: inline-block;
+    }
+    .thumb_title{
+        padding: 8px 0px;
+    }
+
+    /* about */
+    .profolio{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .profolio_photo{
+        width: 34vw;
+        height: 34vw;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .intro_list_layout{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .intro_row{
+        width: 100%;
+        padding-bottom:16px;
+    }
+    .intro_row h5{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    /* works */
+    .info{
+        text-align: center;
+    }
+    .works_layout{
+        text-align: center;
+        padding: 8px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .works_item{
+        padding:0px;
+        display: block;
+        width: 100%;
+    }
+    .works_photo{
+        width: 100%;
+    }
+    .works_text_row{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+    }
+    /* 作業介紹頁 */
+    .works_introduction{
+        font-size: 12px;
+        padding: 0px;
+    }
+    .work_layout{
+        width: 100%;
+    }
+    .work_image_full{
+        padding: 8px;
+    }
+    .work_content{
+        width: 100%;
+        padding: 0px 8px;
+    }
+    .content_image{
+        width: 100%;
+        padding: 8px 0px;
+    }
+    .work_text_layout{
+        width: 100%;
+        padding: 16px 8px;
+    }
+    .work_intro{
+        padding: 16px 0px;
+    }
+}

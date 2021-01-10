@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yung Chia Tai</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/content.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <!--animate.css -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- browser link-->
+        <link rel="icon" href="./img/icon/SVG/browser-icon.svg">
+        <!-- animate js -->
+        <script type="text/javascript" src="./js/jQuery.js"></script>
+    </head>
+    <body class="animate__animated animate__fadeIn">
+        <header id="header" >
+            <span class="logotype"><a href="./index.html">Yung Chia Tai</a></span> 
+            <div class="header-list">
+                <a href="./about.html">About</a>
+                <a href="./work.html">Works</a>
+            </div>
+        </header> 
+        <section id="content_layout">
+            <div class="info">
+                <h1>Works</h1>
+            </div>
+            <div class="block-line"></div>
+            <div class="block"></div>
+            <div class="works_layout">
+                <div class="works_item">
+                    <a href="./dashboard.html"><img src="./img/works/Dashboard/dashboard_cover.jpg" alt="" class="works_photo"></a>
+                    <div class="works_text_row">
+                        <div class="text">
+                            <h4>PChome Dashboard</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_item">
+                    <a href="./PCMan.html"><img src="./img/works/PCMAN/PCMAN_cover.jpg" alt="" class="works_photo"></a>
+                    <div class="works_text_row">
+                        <div class="text">
+                            <h4>PCMAN by PChome</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_item">
+                    <a href="./PChome Travel.html"><img src="./img/works/PChome travel/pchome_travel_cover.jpg" alt="" class="works_photo"></a>
+                    <div class="works_text_row">
+                        <div class="text">
+                            <h4>PChome Travel</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_item">
+                    <a href="./OH Boy.html"><img src="./img/works/OH Boys/SVG/cover2.jpg" alt="" class="works_photo"></a>
+                    <div class="works_text_row">
+                        <div class="text">
+                            <h4>OH Boy! Concept Design</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_item">
+                    <a href="./euspa.html"><img src="./img/works/Euspa/eupsa-cover.jpg" alt="" class="works_photo"></a>
+                    <div class="works_text_row">
+                        <div class="text">
+                            <h4>EUSPA - Branding Design</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_item">
+                    <a href="./Coffee Branding.html"><img src="./img/works/Coffee/二餘咖啡封面-12.jpg" alt="" class="works_photo"></a>
+                    <div class="works_text_row">
+                        <div class="text">
+                            <h4>Coffee Workshop - Branding</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="block"></div>
+        <div class="block-line"></div>
+        <footer id="footer">Copyright © 2020. YungChia Tai</footer>
+        <a href="./OH Boy.html" id="gotop"><span class="fa_top">Top</span></a>
+
+        
+        <!-- js back to top -->
+        <script type="text/javascript">
+            $(function() {
+                /* 按下GoTop按鈕時的事件 */
+                $('#gotop').click(function(){
+                    $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                    return false;
+                });
+                
+                /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+                $(window).scroll(function() {
+                    if ( $(this).scrollTop() > 400){
+                        $('#gotop').fadeIn();
+                    } else {
+                        $('#gotop').fadeOut();
+                    }
+                });
+            });
+        </script> 
+        <script>
+            $(function(){
+                var len = 50; // 超過50個字以"..."取代
+                $(".JQellipsis").each(function(i){
+                    if($(this).text().length>len){
+                        $(this).attr("title",$(this).text());
+                        var text=$(this).text().substring(0,len-1)+"...";
+                        $(this).text(text);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

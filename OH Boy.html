@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yung Chia Tai</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/content.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <!--animate.css -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- browser link-->
+        <link rel="icon" href="./img/icon/SVG/browser-icon.svg">
+
+        <!-- animate js -->
+        <script type="text/javascript" src="./js/jQuery.js"></script>
+
+
+        <!-- js back to top -->
+        <script src="./js/jQuery.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                /* 按下GoTop按鈕時的事件 */
+                $('#gotop').click(function(){
+                    $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                    return false;
+                });
+                
+                /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+                $(window).scroll(function() {
+                    if ( $(this).scrollTop() > 400){
+                        $('#gotop').fadeIn();
+                    } else {
+                        $('#gotop').fadeOut();
+                    }
+                });
+            });
+        </script>   
+
+    </head>
+<body class="animate__animated animate__fadeIn">
+    <header id="header">
+        <span class="logotype"><a href="./index.html">Yung Chia Tai</a></span> 
+        <div class="header-list">
+            <a href="./about.html">About</a>
+            <a href="./work.html">Works</a>
+        </div>
+    </header> 
+    <div class="block"></div>
+    <div class="work_layout ">
+        <img class="work_image_full" src="./img/works/OH Boys/SVG/cover.jpg" alt="">
+    </div>
+    <div class="block"></div>
+    <div class="info">
+        <h2>OH Boy, Streetstyle Website Design</h2>
+        <h6 style="color: #808080;">Concept Design</h6>
+        <div class="block"></div>
+        <div class="works_introduction">
+            <h6 style="font-weight: 200;">街頭時尚與配件擁有高保值特性，因此一直都擁有二手交易的市場，然而高價位服飾，在二手交易中，往往最令人擔憂的部分是真假商品、瑕疵品、以及運貨的問題。OH Boy便是為了解決以上問題而設計的交易平台，專屬於高價位服裝，提供每一位注重街頭的穿搭大師有一個放心購買或者搜尋寶物的服飾平台。</h6>
+        </div>
+    </div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <img class="banner" style="opacity: 0.2;" src="./img/works/OH Boys/SVG/banner.svg" alt="" >
+    <div class="block"></div>
+    <div class="block"></div>
+
+    <div class="work_layout">
+        <div class="work_content">
+            <img src="./img/works/OH Boys/SVG/supreme.jpg" alt="None" class="content_image">
+            <div class="work_intro">
+                <h4>Problem<h4>
+                <span>
+                    <br>沒有專屬街頭服飾的二手平台
+                    <br>・交易過程容易出現認知錯誤或者仿冒品的問題
+                    <br>・想收購某特定商品但不知道從何尋找
+                    <br>
+                </span>
+                <h4><br>Solution<h4>
+                <span>
+                    <br>建立發文收購的收購系統設計面交的交易系統，對話記錄、交易資料，面交權益受保障
+                    <br>
+                </span>
+            </div>
+        </div>
+        <div class="work_content">
+            <img src="./img/works/OH Boys/SVG/img.jpg" alt="None" class="content_image">
+            <div class="work_intro">
+                <h4>Target</h4>
+                <span>
+                    <br>・熱愛時尚、穿搭的年輕男女
+                    <br>・對於預算有所限制，因此從二手平台尋找商品者
+                    <br>・街頭品牌愛好者
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="work_layout">
+            <div class="work_content">
+                <img src="./img/works/OH Boys/SVG/Guideline.png" alt="None" class="content_image">
+            </div>
+            <div class="work_content">
+                <img src="./img/works/OH Boys/SVG/Icongraphy.png" alt="None" class="content_image">
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/OH Boys/SVG/wireframe.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/OH Boys/SVG/homepage.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/OH Boys/SVG/catalog.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_content">
+                <img src="./img/works/OH Boys/SVG/product.jpg" alt="None" class="content_image">
+                <div class="work_intro">
+                    <h4>Acquisition<h4>
+                    <span>
+                        <br>收購限量商品？透過發文刊登欲購買項目，等待有緣人的私訊。
+                    </span>
+                </div>
+            </div>
+            <div class="work_content">
+                <img src="./img/works/OH Boys/SVG/cart.jpg" alt="None" class="content_image">
+                <div class="work_intro">
+                    <h4>Cart<h4>
+                    <span>
+                        <br>商品加入購物車後，系統自動進行分類，可以一眼辨識商品賣家身份，除此之外，有別於其他的二手服飾交易平台，OH Boy提供線上與線下的交易模式：一般的交易模式其金流方式有：信用卡、銀行轉賬、貨到付款；另一種模式為面交交易。
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="work_layout">
+            <div class="work_content">
+                <img src="./img/works/OH Boys/SVG/meetup.jpg" alt="None" class="content_image">
+                <div class="work_intro">
+                    <h4>Meet Up<h4>
+                    <span>
+                        <br>面交服務是專屬為相近地區或者高單價商品交易所設立，高單價商品在一般交易具有較高的風險，例如商品新舊程度的認知，真假便是問題，因此提供面交的交易方式選擇，使用者可以透過面交進行交易，減少運送過程的時間，同時自己所購買的商品也更保障。
+                    </span>
+                </div>
+            </div>
+            <div class="work_content">
+                <img src="./img/works/OH Boys/SVG/transaction.jpg" alt="None" class="content_image">
+                <div class="work_intro">
+                    <h4>Transaction<h4>
+                    <span>
+                        <br>一般的交易模式的金流方式有：信用卡、銀行轉賬、貨到付款。賣家在後台進行販售設定，依自己所能接受的選擇金流方式，物流則可以選擇一般宅配，超商店到店等類型。
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/OH Boys/SVG/notification.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/OH Boys/SVG/end.jpg" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block-line"></div>
+    <footer id="footer">Copyright © 2020. YungChia Tai</footer>
+    <a href="./OH Boy.html" id="gotop"><span class="fa_top">Top</span></a>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yung Chia Tai</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/content.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <!--animate.css -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- browser link-->
+        <link rel="icon" href="./img/icon/SVG/browser-icon.svg">
+
+        <!-- animate js -->
+        <script type="text/javascript" src="./js/jQuery.js"></script>
+
+        <!-- js back to top -->
+        <script src="./js/jQuery.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                /* 按下GoTop按鈕時的事件 */
+                $('#gotop').click(function(){
+                    $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                    return false;
+                });
+                
+                /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+                $(window).scroll(function() {
+                    if ( $(this).scrollTop() > 400){
+                        $('#gotop').fadeIn();
+                    } else {
+                        $('#gotop').fadeOut();
+                    }
+                });
+            });
+        </script>   
+
+    </head>
+<body class="animate__animated animate__fadeIn">
+    <header id="header">
+        <span class="logotype"><a href="./index.html">Yung Chia Tai</a></span> 
+        <div class="header-list">
+            <a href="./about.html">About</a>
+            <a href="./work.html">Works</a>
+        </div>
+    </header> 
+        <div class="block"></div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/Dashboard/dashboard_cover.jpg" alt="">
+        </div>
+        <div class="block"></div>
+        <div class="info">
+            <h2>PChome Dashboard</h2>
+            <h6 style="color: #808080;">2019 - Now</h6>
+            <div class="block"></div>
+            <div class="works_introduction">
+                <h6 style="font-weight: 200;">PChome至今擁有千名員工的規模，部門之間溝通與協作變得更為緊密，透過PChome Dashboard，可以將部門以及組間的工作成效數據化，隨時檢視業績狀態。</h6>
+            </div>
+        </div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="work_layout">
+            <div class="work_content">
+                <div class="work_intro">
+                    <h3><br>說明<h3>
+                    <span>
+                        <br>PChome商品內容跨足各式領域，商品種類多達數百萬件，還擁有自家的物流車隊，更能在
+                        下單後24小時內能取貨，為全國首創送貨服務。發展至今已經擁有千名員工的規模，部門之
+                        間溝通與協作變得更為緊密，透過Dashboard，可以將部門以及組間的工作成效數據化，隨
+                        時檢視業績狀態。
+                        <br><br>Dashboard有以下特點：
+                        <br><br>・資訊數位化，透過圖表設計，每筆數據都能一目瞭然。
+                        <br>・可查看組間業績，評估各組的狀況並且適時地調配人力。
+                        <br>・洞悉各種數據，創造更多產能與價值。
+                    </span>
+                </div>
+            </div>
+            <div class="work_content">
+                <img src="./img/works/Dashboard/dashboard_side.jpg" alt="None" class="content_image">
+            </div>
+        </div>
+        <img class="banner" src="./img/works/Dashboard/dashboard_process.jpg" alt="" >
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>資訊架構 (IA)</h3>
+                <span><br>建構清晰的功能層級，使系統功能分級更明確。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/Dashboard/dahsboard_info-arch.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>設計規範 (GUI)</h3>
+                <span><br>建立Design Guideline，沿用企業品牌色，Dashboard含有大量資訊必須顯示，必須設計多款圖表應用於此，並且建立色彩計畫，
+                    將色彩用於圖表中，可讓必要資訊更加顯眼。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/Dashboard/dashboard_guideline.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>最大權限使用者</h3>
+                <span><br>登入最大權限使用者(CEO)可查看所有部門業績，利用色卡的傳達各組KPI，無論在何種狀態下：平板、筆電、桌電與投影機，都有辦法輕易閱讀。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/Dashboard/dashboard_highest.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>將數據視覺化</h3>
+                <span><br>每個數據、每項資訊，就像敘述一場故事。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/Dashboard/dashboard_demo.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/Dashboard/dashboard_mockup.jpg" alt="">
+        </div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block-line"></div>
+        <footer id="footer">Copyright © 2020. YungChia Tai</footer>
+        <a href="./OH Boy.html" id="gotop"><span class="fa_top">Top</span></a>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yung Chia Tai</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/content.css">
+        <link rel="stylesheet" href="./css/footer.css">
+
+        <!--animate.css -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- browser link-->
+        <link rel="icon" href="./img/icon/SVG/browser-icon.svg">
+ 
+        <!-- animate js -->
+        <script type="text/javascript" src="./js/jQuery.js"></script>
+
+        <!-- js back to top -->
+        <script src="./js/jQuery.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                /* 按下GoTop按鈕時的事件 */
+                $('#gotop').click(function(){
+                    $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                    return false;
+                });
+                
+                /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+                $(window).scroll(function() {
+                    if ( $(this).scrollTop() > 400){
+                        $('#gotop').fadeIn();
+                    } else {
+                        $('#gotop').fadeOut();
+                    }
+                });
+            });
+        </script> 
+        
+    </head>
+<body class="animate__animated animate__fadeIn">
+    <header id="header">
+        <span class="logotype"><a href="./index.html">Yung Chia Tai</a></span> 
+        <div class="header-list">
+            <a href="./about.html">About</a>
+            <a href="./work.html">Works</a>
+        </div>
+    </header> 
+        <div class="block"></div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PChome travel/pchome_travel_cover.jpg" alt="">
+        </div>
+        <div class="block"></div>
+        <div class="info ">
+            <h2>PChome Travel</h2>
+            <h6 style="color: #808080;">2020 - Now</h6>
+            <div class="block"></div>
+            <div class="works_introduction">
+                <h6 style="font-weight: 200;">PChome旅遊是PChome旗下的網路旅遊公司，其中服務包含：機票購買、線上訂房、旅遊票卷販售、郵輪等多種活動項目，合作對象遍及全世界，多達萬間的飯店與旅遊活動等待旅行者自行探索。提供全方面的旅遊體驗。本案是PChome旅遊（子公司）以案件形式，向PChome網路家庭（母公司）委任做RWD網頁設計。PChome擁有龐大工程資源以及大數據資料，將全力支持PChome旅遊，預計未來將推出行動App。</h6>
+            </div>
+        </div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PChome travel/PCHome-Travel_intro.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PChome travel/PChome_travel_entrance.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>考量所有情境</h3>
+                <span><br>現今行動裝置普及，參訪網站的使用者不局限於單一寬度，因此必須考量不同寬度的情境。計畫前期，採用RWD的形式規劃網站。使用者可以在各種情境下使用不同裝置遊覽網站，且仍保有最佳網站遊覽體驗。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PChome travel/pchome_travel_cover.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>設計規範</h3>
+                <span><br>沿用企業色建立一套設計指南讓PChome旅遊保有企業的設計脈絡，透過全新的主視覺給予使用者全新的視覺體驗。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PChome travel/PCHome_Travel_Guideline1.jpg" alt="">
+            <img class="work_image_full" src="./img/works/PChome travel/PCHome_Travel_Guideline2.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>簡約清爽</h3>
+                <span><br>輕柔的色調，令人耳目一新，體現Less is more的設計概念。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PChome travel/PCHome_Travel_result.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PChome travel/PCHome_Travel_end.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <a href="https://www.pchometravel.com/#hotel">前往官網</a>
+            </div>
+        </div>
+    <div class="block"></div>
+    <div class="block-line"></div>
+    <footer id="footer">Copyright © 2020. YungChia Tai</footer>
+    <a href="./OH Boy.html" id="gotop"><span class="fa_top">Top</span></a>
+</body>
+</html>

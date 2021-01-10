@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yung Chia Tai</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/content.css">
+        <link rel="stylesheet" href="./css/footer.css">
+         <!--animate.css -->
+         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+         <!-- browser link-->
+         <link rel="icon" href="./img/icon/SVG/browser-icon.svg">
+ 
+         <!-- animate js -->
+         <script type="text/javascript" src="./js/jQuery.js"></script>
+ 
+
+        <!-- js back to top -->
+        <script src="./js/jQuery.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                /* 按下GoTop按鈕時的事件 */
+                $('#gotop').click(function(){
+                    $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                    return false;
+                });
+                
+                /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+                $(window).scroll(function() {
+                    if ( $(this).scrollTop() > 400){
+                        $('#gotop').fadeIn();
+                    } else {
+                        $('#gotop').fadeOut();
+                    }
+                });
+            });
+        </script>   
+
+    </head>
+<body class="animate__animated animate__fadeIn">
+    <header id="header">
+        <span class="logotype"><a href="./index.html">Yung Chia Tai</a></span> 
+        <div class="header-list">
+            <a href="./about.html">About</a>
+            <a href="./work.html">Works</a>
+        </div>
+    </header> 
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PCMAN/PCMAN_cover.jpg" alt="">
+        </div>
+        <div class="block"></div>
+        <div class="info">
+            <h2>PCMAN by PChome</h2>
+            <h6 style="color: #808080;">2020 - Now</h6>
+            <div class="block"></div>
+            <div class="works_introduction">
+                <h6 style="font-weight: 200;">PChome是台灣最大電商平台，旗下擁有數百名員工，在眾多員工的情形之下，管理效率亦會下降，因此開發企業內部專屬的應用程式PCMAN，PCMAN可以讓員工在辦公室外處理各種疑難雜症，並且隨時掌握公司最新資訊。而PCMAN同時也是一款結合報表、人資、打卡等大小系統於行動程式的生產力工具，提供企業內部所有公司同仁方便的辦公體驗。</h6>
+            </div>
+        </div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PCMAN/PCMAN_app-icon.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>導入企業原有帳號一組帳號便能輕易登入</h3>
+                <span><br>企業內部使用的後台系統本身即有一組帳號密碼，而該組帳號密碼透過Apollo人資系統，直接登入PCMAN，不需要要額外記住一組帳號密碼。
+                <br>PCMAN的內容囊括所有一般員工最常使用的功能：打卡系統、即時訊息通知、出勤紀錄、薪資查詢、請假申請等功能。除此之外，主管階級的使用者附有特定權限才能使用的進階功能：例如戰情報表，業績報表、商品排名等功能，隨時掌握商品銷售最新狀態。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PCMAN/PCMAN_table.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>資訊架構 (IA)</h3>
+                <span><br>建構清晰的功能層級，使系統功能分級更明確。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PCMAN/info_arch.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>行動打卡-
+                <br>不用再匆忙趕著刷卡上下班</h3>
+                <span><br>建構清晰的功能層級，使系統功能分級更明確。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PCMAN/PCMAN_3steps.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PCMAN/guideline_1.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_content">
+                <img src="./img/works/PCMAN/guideline_2.jpg" alt="None" class="content_image">
+            </div>
+            <div class="work_content">
+                <div class="work_intro">
+                    <h3>設計規範 (GUI)<h3>
+                    <span>
+                        <br>建立Design Guide line，擺脫以往PChome的天藍色調，運用沉著穩重的
+                        湖水綠作為PCMAN的主色調，以簡約輕巧的ICON設計使員工們能夠愉悅的使用程式。
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>行動員工系統</h3>
+                <span><br>藉由行動員工系統，遠端傳送資料便能立即串流至後台，無論是申請休假、或者租借辦公室，多種需求都能在彈指之間迅速完成。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PCMAN/PCMAN_dayoff.jpg" alt="">
+        </div>
+        
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>進階系統</h3>
+                <span><br>進階功能只允許擁有權限的主管使用。行銷部、商品部主管可查看當日業績，與商品銷量，掌握商品銷售流向。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PCMAN/PCMAN_advantage.jpg" alt="">
+        </div>
+        <div class="work_layout">
+            <div class="work_text_layout">
+                <h3>最高階報表系統</h3>
+                <span><br>高階主管才有的最大權限，提供魚群統計與假日報表訂單功能，假日不需進入公司，也可查看整體業績。</span>
+            </div>
+        </div>
+        <div class="work_layout">
+            <img class="work_image_full" src="./img/works/PCMAN/PCMAN_highest.jpg" alt="">
+        </div>
+        <img class="banner" src="./img/works/PCMAN/PCMAN_end.jpg" alt="">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block-line"></div>
+    <footer id="footer">Copyright © 2020. YungChia Tai</footer>
+    <a href="./OH Boy.html" id="gotop"><span class="fa_top">Top</span></a>
+</body>
+</html>
