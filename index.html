@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yung Chia Tai</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!--animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- browser link-->
+    <link rel="icon" href="./img/icon/SVG/browser-icon.svg">
+
+    <!-- animate js -->
+    <script type="text/javascript" src="./js/jQuery.js"></script>
+
+    <!-- 特效 -->
+    <link rel="stylesheet" href="./js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    
+    
+    
+</head>
+<body class="animate__animated animate__fadeIn">
+    <header id="header">
+        <span class="logotype"><a href="./index.html">Yung Chia Tai</a></span> 
+        <div class="header-list">
+            <a href="./about.html">About</a>
+            <a href="./work.html">Works</a>
+        </div>
+    </header> 
+    <section id="content_layout">
+        <!-- <div class="layout animate__animated animate__fadeIn">
+            <div class="owl-carousel owl-theme">
+                <div class="owl-carousel-img"><img src="./img/works/Dashboard/dashboard_cover.jpg" alt=""></div>
+                <div class="owl-carousel-img"><img src="./img/works/PCMAN/PCMAN_cover.jpg" alt=""></div>
+                <div class="owl-carousel-img"><img src="./img/works/PChome travel/pchome_travel_cover.jpg" alt=""></div>
+                <div class="owl-carousel-img"><img src="./img/works/OH Boys/SVG/cover2.jpg" alt=""></div>
+        </div> -->
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="info animate__animated animate__fadeInUp">
+                <h1>Yung Chia Tai</h1>
+                <h1>is a UI/UX designer based in Taipei, Taiwan.</h1>
+            </div>
+            <div class="block"></div>
+            <div class="block-line"></div>
+            <div class="block"></div>
+            <div class="thumb_image">
+                <div class="thumb_image_content">
+                    <a href="./dashboard.html">
+                        <img src="./img/works/Dashboard/dashboard_cover.jpg" alt="None" class="image">
+                    </a>
+                </div>
+                <div class="thumb_image_content">
+                    <a href="./PCMan.html">
+                        <img src="./img/works/PCMAN/PCMAN_cover.jpg" alt="None" class="image">
+                    </a>
+                </div>
+                <div class="thumb_image_content">
+                    <a href="./PChome Travel.html">
+                        <img src="./img/works/PChome travel/pchome_travel_cover.jpg" alt="None" class="image">
+                    </a>
+                </div>
+                <div class="thumb_image_content">
+                    <a href="./OH Boy.html">
+                        <img src="./img/works/OH Boys/SVG/cover2.jpg" alt="None" class="image">
+                    </a>
+                    <!-- <div class="thumb_title">
+                        <h6>Coffee Workshop - Branding</h6>
+                    </div> -->
+                </div>
+        </div>
+        <div class="block"></div>
+        <div class="block-line"></div>
+        <footer id="footer">Copyright © 2020. YungChia Tai</footer>
+    </section>
+
+    <!-- js特效 -->
+    <script src="./js/jQuery.js"></script>
+    <script type="text/javascript" src="./js/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script type="text/javascript"src="./js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script>
+    $('.owl-carousel').owlCarousel({
+        items:1,
+        margin:10,
+        loop:true,
+        autoHeight:true,
+        autoplay:true,
+        autoplayTimeout:4000,
+        animateOut: 'fadeOut'
+    });
+    </script>
+    
+</body>
+</html>
